@@ -1,0 +1,59 @@
+/* Окно «Бронирование стола» — общее для всех страниц */
+.bmodal { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 20px; }
+.bmodal[hidden] { display: none; }
+.bmodal__backdrop { position: absolute; inset: 0; background: rgba(0,32,17,.72); backdrop-filter: blur(4px); }
+.bmodal__card {
+  position: relative; width: min(620px, 100%); max-height: calc(100vh - 40px); overflow: auto; overscroll-behavior: contain;
+  padding: clamp(24px, 3.4vw, 40px); background: var(--green); color: var(--white); border-radius: 28px;
+}
+.bmodal__x {
+  position: absolute; top: 16px; right: 16px; width: 42px; height: 42px; border: 0; border-radius: 50%; cursor: pointer;
+  background: rgba(255,255,255,.12); color: var(--white); font-size: 17px; transition: background-color .3s;
+}
+.bmodal__x:hover { background: rgba(255,255,255,.22); }
+.bmodal__title { margin: 0 50px 22px 0; font-family: var(--serif); font-weight: 700; font-size: clamp(32px, 3.6vw, 46px); line-height: 1; }
+
+.bmodal__form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.bfield {
+  width: 100%; height: 54px; padding: 0 18px; border-radius: 18px; border: 1.5px solid transparent;
+  background: rgba(255,255,255,.1); color: var(--white); font: 600 16px var(--sans); outline: none;
+  transition: border-color .3s, background-color .3s;
+}
+.bfield::placeholder { color: rgba(237,243,241,.6); }
+.bfield:focus, .bfield:focus-within { border-color: rgba(255,255,255,.7); background: rgba(255,255,255,.16); }
+.bfield.is-error { border-color: var(--accent); }
+.bfield--area { grid-column: 1 / -1; height: auto; min-height: 96px; padding: 14px 18px; resize: vertical; }
+.bfield--date { display: flex; align-items: center; gap: 10px; }
+.bfield--date span { flex: 0 0 auto; font-size: 14px; color: rgba(237,243,241,.7); }
+.bfield--date input, .bfield--date select {
+  flex: 1; min-width: 0; height: 100%; border: 0; background: none; color: var(--white);
+  font: 600 16px var(--sans); outline: none; color-scheme: dark;
+}
+.bfield--date select option { color: var(--ink); }
+
+.bguests {
+  grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; height: 54px; padding: 0 8px 0 18px;
+  border-radius: 18px; background: rgba(255,255,255,.1);
+}
+.bguests__label { flex: 1; font-size: 15px; font-weight: 600; color: rgba(237,243,241,.8); }
+.bguests__btn {
+  width: 40px; height: 40px; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--white); color: var(--green); font: 700 20px/1 var(--sans); transition: transform .2s;
+}
+.bguests__btn:active { transform: scale(.92); }
+.bguests__val {
+  width: 44px; height: 40px; border: 0; background: none; text-align: center;
+  color: var(--white); font: 700 20px var(--sans); outline: none;
+}
+
+.bmodal__submit { grid-column: 1 / -1; height: 56px; font-size: 17px; margin-top: 4px; }
+.bmodal__oferta { grid-column: 1 / -1; margin: 0; font-size: 13px; line-height: 1.45; font-weight: 600; color: rgba(237,243,241,.75); text-align: center; }
+.bmodal__oferta a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+.bmodal__msg { grid-column: 1 / -1; margin: 0; min-height: 1.3em; font-size: 14px; font-weight: 700; color: #ffb3b7; text-align: center; }
+.bmodal__msg.is-ok { color: var(--white); }
+
+@media (max-width: 560px) {
+  .bmodal { padding: 0; align-items: end; }
+  .bmodal__card { max-height: 94vh; border-radius: 22px 22px 0 0; padding: 22px 16px 26px; }
+  .bmodal__form { grid-template-columns: 1fr; }
+}

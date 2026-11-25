@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Мясной ресторан «Угли» — Екатеринбург</title>
+  <meta name="description" content="Мясной ресторан «Угли» в Екатеринбурге. Самый большой выбор стейков в Екатеринбурге. Сибирский тракт, 3.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <header class="header" data-reveal-header>
+    <div class="header__left">
+      <a class="header__logo" href="#" aria-label="Угли — на главную" data-en-label="UGLI — home">
+        <img src="assets/logo_image.svg" alt="" width="44" height="44">
+        <img src="assets/logo_text.svg" alt="Угли" data-en-alt="UGLI" width="82" height="23">
+      </a>
+      <!-- Выбор языка — как в «Сойке»: активный яркий, второй полупрозрачный -->
+      <nav class="langs" aria-label="Язык сайта" data-en-label="Site language">
+        <button type="button" data-lang="ru" class="on" aria-pressed="true">RU</button><i aria-hidden="true">|</i>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </nav>
+    </div>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+73432372401">+7 (343) 237-24-01</a>
+      <a class="header__login" href="https://ugli-ekb.ru/register/"><img src="assets/login.svg" alt="" width="22" height="22"><span data-i18n="login">Войти</span></a>
+      <a class="btn btn--accent" href="#book" data-book data-i18n="book">Забронировать</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Мясной ресторан «Угли»" data-en-label="Meat restaurant UGLI">
+      <div class="hero__media">
+        <video class="hero__video" src="assets/hero.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <div class="hero__shade"></div>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title" data-split data-i18n-split="heroTitle">Самый большой выбор стейков в&nbsp;Екатеринбурге</h1>
+        <p class="hero__lead" data-hero-item data-i18n="heroLead">Все лучшие стейки попадают к&nbsp;нам</p>
+
+        <div class="hero__buttons">
+          <a class="btn btn--ghost" href="news.html#banquets" data-hero-item data-i18n="btnBanquet">Заказать банкет</a>
+          <a class="btn btn--ghost" href="https://ugli-ekb.ru/register/" data-hero-item data-i18n="btnCard">Получить карту</a>
+          <a class="btn btn--ghost" href="menu.html" data-hero-item data-i18n="btnDelivery">Меню доставки</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== О ресторане (тексты и фото — с ugli-ekb.ru) ===== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <div class="about__text">
+          <h2 class="section-title" id="about-title" data-reveal data-i18n="aboutTitle">О&nbsp;ресторане «Угли»</h2>
+
+          <ol class="about__list">
+            <li class="is-active" data-step="0" data-i18n="item1">Авторские блюда из мяса, рыбы и морепродуктов</li>
+            <li data-step="1" data-i18n="item2">Оригинальные десерты от шеф-кондитера</li>
+            <li data-step="2" data-i18n="item3">Авторские чаи и освежающие натуральные лимонады</li>
+            <li data-step="3" data-i18n="item4">Современный интерьер в стиле лофт, удобные столы и мягкие диваны для веселых компаний</li>
+            <li data-step="4" data-i18n="item5">Отдельная комната на компанию от 8 человек, комфортный отдельный зал на 25 человек</li>
+            <li data-step="5" data-i18n="item6">DJ-сеты по пятницам и субботам с 20:00</li>
+            <li data-step="6" data-i18n="item7">Отдельный банкетный зал для организации свадеб, корпоративов, винных дегустаций и других торжеств до 40 человек</li>
+          </ol>
+        </div>
+
+        <!-- Одна рамка, фото под каждый пункт переливаются друг в друга -->
+        <div class="about__stage">
+          <div class="stage__frame" data-photo>
+            <img class="stage__img is-active" src="assets/about/01-meat.jpg" alt="Стейк на доске — авторские блюда «Углей»" data-en-alt="Steak on a board — signature dishes of UGLI">
+            <img class="stage__img" src="assets/about/02-dessert.jpg" alt="Авторский десерт от шеф-кондитера" data-en-alt="Signature dessert from the pastry chef" loading="lazy">
+            <img class="stage__img" src="assets/about/03-drinks.jpg" alt="Натуральные лимонады" data-en-alt="Natural lemonades" loading="lazy">
+            <img class="stage__img" src="assets/about/04-interior.jpg" alt="Стол у мягкого дивана в зале" data-en-alt="A table by a soft sofa in the hall" loading="lazy">
+            <img class="stage__img" src="assets/about/05-room.jpg" alt="Отдельный зал в стиле лофт" data-en-alt="Private loft-style room" loading="lazy">
+            <img class="stage__img" src="assets/about/06-dj.jpg" alt="DJ-сет в ресторане «Угли»" data-en-alt="DJ set at UGLI restaurant" loading="lazy">
+            <img class="stage__img" src="assets/about/07-banquet.jpg" alt="Банкетный зал ресторана «Угли»" data-en-alt="UGLI restaurant banquet hall" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <dl class="about__facts">
+        <div data-reveal><dt data-count="12">12</dt><dd data-i18n="fact1">видов стейков из говядины</dd></div>
+        <div data-reveal><dt data-count="120" data-suffix="+">120+</dt><dd data-i18n="fact2">видов вина в карте</dd></div>
+        <div data-reveal><dt data-count="30" data-suffix="+">30+</dt><dd data-i18n="fact3">сортов пива</dd></div>
+        <div data-reveal><dt data-count="40" data-prefix="до " data-i18n-prefix="upTo">до 40</dt><dd data-i18n="fact4">гостей в банкетном зале</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===== Новости и акции — баннеры с ugli-ekb.ru, слайд-шоу ===== -->
+    <section class="promo" id="news" aria-labelledby="promo-title">
+      <div class="promo__inner">
+        <h2 class="section-title" id="promo-title" data-reveal data-i18n="promoTitle">Новости и акции</h2>
+
+        <div class="promo__show" data-photo aria-roledescription="слайд-шоу">
+          <a class="promo__slide is-active" href="https://ugli-ekb.ru/shares/?utm_source=site&utm_medium=banner&utm_campaign=newyear#banquetForm"><img src="assets/promo/01.jpg" alt="Новогодний корпоратив в «Углях»" data-en-alt="New Year corporate party at UGLI"></a>
+          <a class="promo__slide" href="news.html#prazdnuyte-den-rozhdeniya-v-restorane-ugli"><img src="assets/promo/02.jpg" alt="Празднуйте день рождения в ресторане «Угли»" data-en-alt="Celebrate your birthday at UGLI restaurant"></a>
+          <a class="promo__slide" href="menu.html"><img src="assets/promo/03.jpg" alt="Меню доставки" data-en-alt="Delivery menu"></a>
+          <a class="promo__slide" href="menu.html#cat-master-klassy_1"><img src="assets/promo/04.jpg" alt="Мастер-классы" data-en-alt="Master classes"></a>
+          <a class="promo__slide" href="news.html#detskie-master-klassy"><img src="assets/promo/05.jpg" alt="Детские мастер-классы" data-en-alt="Children's master classes"></a>
+          <a class="promo__slide" href="https://ugli-ekb.ru/register/"><img src="assets/promo/06.jpg" alt="Карта гостя" data-en-alt="Guest card"></a>
+          <a class="promo__slide" href="https://ugli-ekb.ru/shares/"><img src="assets/promo/07.jpg" alt="Банкеты" data-en-alt="Banquets"></a>
+          <a class="promo__slide" href="menu.html#cat-furshet"><img src="assets/promo/08.jpg" alt="Фуршет" data-en-alt="Buffet"></a>
+          <a class="promo__slide" href="menu.html#cat-sertifikaty"><img src="assets/promo/09.jpg" alt="Подарочные сертификаты" data-en-alt="Gift certificates"></a>
+          <a class="promo__slide" href="menu.html#cat-biznes-lanch-s-pn-po-pt-s-11-30-do-16-00"><img src="assets/promo/10.jpg" alt="Бизнес-ланч с пн по пт с 11:30 до 16:00" data-en-alt="Business lunch Mon–Fri 11:30–16:00"></a>
+          <a class="promo__slide" href="menu.html#cat-torty-na-zakaz-za-sutki-po-telefonu-237-24-01"><img src="assets/promo/11.jpg" alt="Торты на заказ" data-en-alt="Cakes to order"></a>
+          <a class="promo__slide" href="menu.html#cat-boksy"><img src="assets/promo/12.jpg" alt="Боксы" data-en-alt="Boxes"></a>
+          <div class="promo__slide"><img src="assets/promo/13.jpg" alt="Акция ресторана «Угли»" data-en-alt="UGLI restaurant offer"></div>
+          <a class="promo__slide" href="menu.html#cat-sety_3"><img src="assets/promo/14.jpg" alt="Сеты" data-en-alt="Sets"></a>
+        </div>
+
+        <div class="promo__cta">
+          <a class="btn btn--green" href="news.html" data-reveal data-i18n="promoBtn">Смотреть</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Подписка на рассылку — тексты и структура как на ugli-ekb.ru ===== -->
+    <section class="subscribe" aria-labelledby="sub-title">
+      <div class="subscribe__card" data-reveal>
+        <h2 class="subscribe__title" id="sub-title" data-i18n="subTitle">Подпишитесь на нашу рассылку</h2>
+        <div class="subscribe__left">
+          <img src="assets/gift.svg" alt="" width="32" height="30">
+          <p data-i18n="subText">Мы предоставляем специальные акции и предложения только для подписчиков рассылки</p>
+        </div>
+        <form class="subscribe__form" novalidate data-subscribe>
+          <div class="subscribe__row">
+            <input class="subscribe__input" type="email" name="email" placeholder="Ваша почта" data-i18n-ph="subPh" autocomplete="email" required aria-label="Ваша почта" data-en-label="Your email">
+            <button class="btn btn--accent subscribe__btn" type="submit" data-i18n="subBtn">Подписаться</button>
+          </div>
+          <label class="subscribe__check">
+            <input type="checkbox" name="agree" required>
+            <span class="subscribe__box" aria-hidden="true"></span>
+            <span><span data-i18n="subAgree">даю согласие на</span> <a href="https://ugli-ekb.ru/documents/policy-data.pdf" target="_blank" rel="noopener" data-i18n="subAgreeLink">обработку персональных данных</a></span>
+          </label>
+          <p class="subscribe__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Меню — текст, фото и ссылки с ugli-ekb.ru ===== -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="menu__inner">
+        <div class="menu__head">
+          <h2 class="section-title" id="menu-title" data-reveal data-i18n="menuTitle">Меню</h2>
+          <div class="menu__text">
+            <p data-reveal data-i18n="menuP1">Меню разнообразно — от классического «Цезаря», до котлет из краба.</p>
+            <p data-reveal data-i18n="menuP2">Наши повара готовы предложить Вам 12 видов стейков из говядины, блюда из оленины, баранины, индейки и рыбы, а так же бургеры, хачапури и вкуснейшие авторские торты.</p>
+            <p data-reveal data-i18n="menuP3">В качестве сопроводительных напитков — 6 видов разливного пива, 14 видов виски, 120 видов вина, авторский чай и коктейли от барменов ресторана «Угли».</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карусель: фото через одно выше/ниже, стрелки по бокам -->
+      <div class="menu__carousel">
+        <button class="menu__arrow menu__arrow--prev" type="button" aria-label="Предыдущие фото" data-en-label="Previous photos" data-menu-prev>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="menu__track" data-menu-track>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/01.jpg" alt="Стейк на гриле" data-en-alt="Grilled steak" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/02.jpg" alt="Салат с бурратой" data-en-alt="Burrata salad" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-steyki-i-gril-sety"><img src="assets/menu/03.jpg" alt="Стейк с соусами на доске" data-en-alt="Steak with sauces on a board" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-napitki"><img src="assets/menu/04.jpg" alt="Виски" data-en-alt="Whisky" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/05.jpg" alt="Авторские десерты" data-en-alt="Signature desserts" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/06.jpg" alt="Блюдо на доске" data-en-alt="Dish on a board" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-okhlazhdennye-steyki"><img src="assets/menu/07.jpg" alt="Охлаждённые стейки" data-en-alt="Chilled steaks" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-napitki"><img src="assets/menu/08.jpg" alt="Лимонады" data-en-alt="Lemonades" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/09.jpg" alt="Тако" data-en-alt="Tacos" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-steyki-i-gril-sety"><img src="assets/menu/10.jpg" alt="Стейк" data-en-alt="Steak" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-steyki-i-gril-sety"><img src="assets/menu/11.jpg" alt="Гриль-сет" data-en-alt="Grill set" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/12.jpg" alt="Чизкейк" data-en-alt="Cheesecake" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-napitki"><img src="assets/menu/13.jpg" alt="Авторский чай" data-en-alt="Signature tea" loading="lazy"></a>
+          <a class="menu__card" href="menu.html#cat-steyki-i-gril-sety"><img src="assets/menu/14.jpg" alt="Стейк на доске" data-en-alt="Steak on a board" loading="lazy"></a>
+          <a class="menu__card" href="menu.html"><img src="assets/menu/15.jpg" alt="Блюдо от шефа" data-en-alt="Chef's dish" loading="lazy"></a>
+        </div>
+        <button class="menu__arrow menu__arrow--next" type="button" aria-label="Следующие фото" data-en-label="Next photos" data-menu-next>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="menu__cta">
+        <a class="btn btn--green" href="menu.html" data-reveal data-i18n="menuBtn">Смотреть меню</a>
+      </div>
+    </section>
+
+    <!-- FAQ:START -->
+    <!-- ===== Часто задаваемые вопросы — тексты с ugli-ekb.ru ===== -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq__inner">
+        <h2 class="section-title" id="faq-title" data-reveal data-i18n="faqTitle">Часто задаваемые вопросы</h2>
+        <div class="faq__list">
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+              <span data-en="Can we hold a banquet at your restaurant?">В вашем ресторане возможно провести банкет?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-1" role="region" aria-labelledby="faq-q-1" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt;Of course, YES. &lt;br&gt; We can offer a separate banquet hall for up to 35 people. The hall is perfect for birthdays, weddings, gender parties, corporate events, business meetings and breakfasts. The hall is fully equipped with everything you need: screen and projector, sound system, light show, flipchart. &lt;br&gt; We have a &lt;a href=&quot;assets/pdf/banketnoe-menyu.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;banquet&lt;/a&gt; and a &lt;a href=&quot;assets/pdf/furshetnoe-menyu.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;buffet&lt;/a&gt; menu! &lt;br&gt; There is &lt;strong&gt;no&lt;/strong&gt; corkage fee and no hall rental, and no charge for using anything in the banquet hall either. &lt;br&gt; We assign dedicated waiters to your event, trained and familiar with all the details and nuances of banquets. &lt;br&gt; Call &lt;a href=&quot;tel:+79220281406&quot;&gt;+79220281406&lt;/a&gt; and our banquet manager Evgenia will be happy to answer all your questions and offer a solution for any request.&lt;/p&gt;"><p>Конечно, ДА. <br> Мы можем предложить отдельный банкетный зал вместимостью до 35 чел. Зал отлично подходит для таких мероприятий как день рождения, свадьбы, гендер пати, корпоративы, бизнес встречи и завтраки. Зал полностью оборудован всем необходимым: Экран и проектор, музыкальная аппаратура, светомузыка, флипчарт. <br> Есть <a href="assets/pdf/banketnoe-menyu.pdf" target="_blank" rel="noopener">банкетное</a> и <a href="assets/pdf/furshetnoe-menyu.pdf" target="_blank" rel="noopener">фуршетное</a> меню! <br> <strong>Нет</strong> пробкового сбора и аренды зала, ровно так же как платы и за пользование всем, что есть в банкетном зале. <br> Мы выделяем отдельных официантов на ваше мероприятие, обученных и знающих тонкости и нюансы проведения банкетных мероприятий. <br> Звоните по номеру <a href="tel:+79220281406">+79220281406</a> и наш банкетный менеджер Евгения с радостью ответит на все вопросы и предложит решение на любые запросы.</p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+              <span data-en="Can we celebrate a child&#39;s birthday at your restaurant?">Возможно ли в вашем ресторане отметить детский день рождения?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-2" role="region" aria-labelledby="faq-q-2" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt;Absolutely. We can seat you in several halls, including the banquet hall. There you can hold master classes, invite entertainers, have fun and eat well — we also have a &lt;a href=&quot;assets/pdf/detskoe-menyu.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;children&#39;s&lt;/a&gt; menu. And there is a sound system and a light show) &lt;/p&gt;"><p>Безусловно. Мы можем разместить вас в нескольких залах, включая банкетный. Там можно организовать мастер классы, пригласить аниматоров, весело провести время и вкусно покушать, ведь у нас есть и <a href="assets/pdf/detskoe-menyu.pdf" target="_blank" rel="noopener">детское</a> меню. Музыкальная аппаратура и светомузыка есть) </p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+              <span data-en="Do you have private rooms?">Есть ли у вас отдельные комнаты?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-3" role="region" aria-labelledby="faq-q-3" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt;Yes, our restaurant has three. &lt;br&gt; The &quot;&lt;strong&gt;VIP room&lt;/strong&gt;&quot; seats 10-12 people, the &quot;&lt;strong&gt;Banquet room&lt;/strong&gt;&quot; holds up to 25 people. And there is a separate &lt;strong&gt;banquet hall&lt;/strong&gt; for 35 people, which is very popular for anniversaries, weddings, corporate parties and other large events. You can get all the information about the banquet hall from our banquet manager Evgenia at &lt;a href=&quot;tel:+79220281406&quot;&gt;+79220281406&lt;/a&gt;&lt;br&gt; We look forward to your call! &lt;/p&gt;"><p>Да, в нашем ресторане их три. <br> "<strong>Випка</strong>" рассчитана на 10-12 человек, "<strong>Банкетка</strong>" может разместить до 25 человек. И есть отдельный <strong>банкетный зал</strong> на 35 человек, который очень популярен на юбилеи, свадьбы, корпоративы и другие крупные мероприятия. Всю необходимую информацию по банкетному залу можете узнать у нашего банкетного менеджера Евгении по тел. <a href="tel:+79220281406">+79220281406</a><br> Будем рады вашему звонку! </p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+              <span data-en="Delivery terms">Условия доставки</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-4" role="region" aria-labelledby="faq-q-4" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; Here you can check the cost of delivery from the restaurant to your address, delivery time and terms &lt;a href=&quot;https://ugli-ekb.ru/usloviya-dostavki/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ugli-ekb.ru/usloviya-dostavki/&lt;/a&gt; &lt;/p&gt; &lt;p&gt; You can check your address on the delivery zone map here &lt;a href=&quot;https://ugli-ekb.ru/delivery-map/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ugli-ekb.ru/delivery-map/&lt;/a&gt; &lt;/p&gt;"><p> Здесь Вы можете посмотреть стоимость доставки от ресторана по Вашему адресу, время и условия доставки <a href="https://ugli-ekb.ru/usloviya-dostavki/" target="_blank" rel="noopener">https://ugli-ekb.ru/usloviya-dostavki/</a> </p> <p> Проверить свой адрес на карте по зонам доставки вы можете здесь <a href="https://ugli-ekb.ru/delivery-map/" target="_blank" rel="noopener">https://ugli-ekb.ru/delivery-map/</a> </p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+              <span data-en="Why can&#39;t all dishes be ordered for delivery?">Почему не все блюда можно заказать на доставку?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-5" role="region" aria-labelledby="faq-q-5" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; Some of our dishes are meant to be served in front of the guest and are prepared only inside the restaurant. You can always choose an alternative for your order or consult the delivery manager about the dishes you are interested in. And, of course, you can try these dishes when you visit the restaurant&lt;/p&gt;"><p> Некоторые наши блюда предполагают подачу при госте и готовятся только внутри ресторана. Вы всегда можете выбрать альтернативный вариант для заказа или проконсультироваться с менеджером доставки по интересующим Вас блюдам. И, конечно, можете попробовать эти блюда при визите в ресторан</p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-6" id="faq-q-6">
+              <span data-en="How do I book the table I want?">Как забронировать нужный стол?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-6" role="region" aria-labelledby="faq-q-6" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; Tables are reserved through the &lt;a href=&quot;https://ugli-ekb.ru/?reserve&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;form on the website&lt;/a&gt;. In the comment you can mention any wishes, and we will try to find the best option for you&lt;/p&gt;"><p> Резерв столов происходит через <a href="https://ugli-ekb.ru/?reserve" target="_blank" rel="noopener">форму на сайте</a>. В комментарии Вы можете указать любые пожелания, мы постараемся найти лучший вариант для Вас</p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-7" id="faq-q-7">
+              <span data-en="Can I come with pets?">Можно ли с животными?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-7" role="region" aria-labelledby="faq-q-7" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; Yes, we will gladly seat you with small dogs &lt;/p&gt;"><p> Да, мы с радостью разместим Вас с небольшими собачками </p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-8" id="faq-q-8">
+              <span data-en="Do you have a corkage fee?">У вас есть пробковый сбор?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-8" role="region" aria-labelledby="faq-q-8" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; No, we selected our &lt;a href=&quot;assets/pdf/karta-vin-i-piva.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wines&lt;/a&gt; and put together our &lt;a href=&quot;assets/pdf/karta-bara.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cocktail list&lt;/a&gt; with special love and care. We are sure you will find something for yourself &lt;/p&gt;"><p> Нет, мы с особой любовью и трепетом подбирали <a href="assets/pdf/karta-vin-i-piva.pdf" target="_blank" rel="noopener">вина</a> и составляли <a href="assets/pdf/karta-bara.pdf" target="_blank" rel="noopener">коктейльную карту</a>. Уверены, вы найдете что-то для себя </p></div>
+          </div>
+        </div>
+          <div class="faq__item">
+          <h3 class="faq__q">
+            <button type="button" aria-expanded="false" aria-controls="faq-a-9" id="faq-q-9">
+              <span data-en="Can we bring our own cake?">А можно со своим тортом?</span>
+              <i class="faq__icon" aria-hidden="true"></i>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a-9" role="region" aria-labelledby="faq-q-9" hidden>
+            <div class="faq__a-inner" data-en-html="&lt;p&gt; Our pastry chef is a true master — we will be happy to bring your wishes to life. &lt;/p&gt;"><p> Наш шеф-кондитер искусный мастер – будем рады воплотить в жизнь Ваши пожелания. </p></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Прямая связь с руководством — тексты и поля как на ugli-ekb.ru ===== -->
+    <section class="feedback" id="feedback" aria-labelledby="fb-title">
+      <div class="feedback__card" data-reveal>
+        <div class="feedback__info">
+          <h2 class="feedback__title" id="fb-title" data-i18n="fbTitle">Прямая связь с руководством</h2>
+          <div class="feedback__note">
+            <img src="assets/information.svg" alt="" width="32" height="32">
+            <div>
+              <p><strong data-en="Dear guests!">Уважаемые гости!</strong></p>
+              <p data-en="You can share your feedback and wishes with the management by filling out this form. All feedback will be reviewed. Please remember to leave a way to contact you.">Ваши отзывы и пожелания вы можете сообщить руководству, заполнив эту форму. Все отзывы будут обязательно рассмотрены. Не забывайте указывать варианты связи с вами.</p>
+            </div>
+          </div>
+        </div>
+        <form class="feedback__form" novalidate data-feedback>
+          <input class="field" type="text" name="surname" placeholder="Фамилия" aria-label="Фамилия" data-en-ph="Surname" data-en-label="Surname" autocomplete="family-name">
+          <input class="field" type="text" name="name" placeholder="Имя" aria-label="Имя" data-en-ph="Name" data-en-label="Name" autocomplete="given-name">
+          <input class="field" type="email" name="email" placeholder="Эл. почта" aria-label="Эл. почта" data-en-ph="Email" data-en-label="Email" autocomplete="email">
+          <input class="field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" data-en-ph="Phone" data-en-label="Phone" autocomplete="tel">
+          <textarea class="field field--area" name="comment" rows="5" placeholder="Комментарий" aria-label="Комментарий" data-en-ph="Comment" data-en-label="Comment"></textarea>
+          <div class="feedback__bottom">
+            <button class="btn btn--accent" type="submit" data-en="Send">Отправить</button>
+            <label class="subscribe__check">
+              <input type="checkbox" name="agree">
+              <span class="subscribe__box" aria-hidden="true"></span>
+              <span><span data-en="I agree to the">даю согласие на</span> <a href="https://ugli-ekb.ru/documents/policy-data.pdf" target="_blank" rel="noopener" data-en="processing of personal data">обработку персональных данных</a></span>
+            </label>
+          </div>
+          <p class="subscribe__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+<!-- FAQ:END -->
+
+    <!-- ===== Контакты — все данные с ugli-ekb.ru ===== -->
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="contacts__inner">
+        <h2 class="section-title" id="contacts-title" data-reveal data-i18n="contactsTitle">Контакты</h2>
+
+        <div class="contacts__grid">
+          <div class="contacts__info" data-reveal>
+            <div class="crow">
+              <img src="assets/contacts/clock.svg" alt="" width="28" height="28">
+              <div class="crow__hours">
+                <span data-i18n="dMonThu">ПН – ЧТ</span><strong>11:30 – 00:00</strong>
+                <span data-i18n="dFriSat">ПТ – СБ</span><strong>11:30 – 02:00</strong>
+                <span data-i18n="dSun">ВС</span><strong>11:30 – 00:00</strong>
+              </div>
+            </div>
+            <div class="crow">
+              <img src="assets/contacts/pin.svg" alt="" width="28" height="28">
+              <p data-i18n="address">Екатеринбург, ул. Сибирский тракт 3</p>
+            </div>
+            <div class="crow">
+              <img src="assets/contacts/phone.svg" alt="" width="28" height="28">
+              <p><span data-i18n="cPhone">Телефон</span> <a href="tel:+73432372401">+7 (343) 237-24-01</a></p>
+            </div>
+            <div class="crow">
+              <img src="assets/contacts/max.svg" alt="" width="28" height="28">
+              <p>MAX <a href="https://max.ru/u/f9LHodD0cOI1_cVaK9ztD3dzQzi-vCalgGqEfkl7UUvR3izO3-byCxwGWAs" target="_blank" rel="noopener">+7 932 116 64 90</a></p>
+            </div>
+            <div class="crow">
+              <img src="assets/contacts/whatsapp.svg" alt="" width="28" height="28">
+              <p>Whatsapp <a href="https://wa.me/79321166490" target="_blank" rel="noopener">+7 932 116 64 90</a></p>
+            </div>
+            <div class="crow">
+              <img src="assets/contacts/telegram.svg" alt="" width="28" height="28">
+              <p><span data-i18n="cBot">Чат-бот Telegram</span> <a href="https://t.me/ugli_ekb_bot" target="_blank" rel="noopener">@ugli_ekb_bot</a></p>
+            </div>
+          </div>
+
+          <div class="contacts__map" data-reveal>
+            <iframe title="Ресторан «Угли» на карте" data-en-title="UGLI restaurant on the map" loading="lazy"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A690982cab047e2b18dd4cb302bc7b641054527fd40e10b7a6b693118fc2893e1&amp;source=constructor&amp;scroll=false"></iframe>
+          </div>
+        </div>
+
+        <div class="contacts__deps">
+          <div class="dep" data-reveal>
+            <h3 data-i18n="depBanquet">Банкетный менеджер:</h3>
+            <p data-en="Ekaterina (calls / MAX / Telegram)">Екатерина (звонки / MAX / Telegram)</p>
+            <a href="tel:+79220208806">+79220208806</a>
+          </div>
+          <div class="dep" data-reveal>
+            <h3 data-i18n="depPurchase">Отдел закупа:</h3>
+            <p data-en="Partnership proposals">Предложения о сотрудничестве</p>
+            <a href="mailto:tov2478209@gmail.com">tov2478209@gmail.com</a>
+            <p data-en="Natalia">Наталья</p>
+            <a href="tel:83432478209">8 (343) 247-82-09</a>
+          </div>
+          <div class="dep" data-reveal>
+            <h3 data-i18n="depMarketing">Отдел маркетинга:</h3>
+            <p data-en="Anton">Антон</p>
+            <a href="mailto:ab630447315@gmail.com">ab630447315@gmail.com</a>
+          </div>
+          <div class="dep" data-reveal>
+            <h3 data-i18n="depHr">Отдел подбора персонала:</h3>
+            <p data-en="HR (calls / MAX / Telegram)">HR (звонки / MAX / Telegram)</p>
+            <a href="tel:+79920037926">+79920037926</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER:START -->
+  <footer class="site-footer">
+    <!-- Рекомендуем к посещению — партнёры с ugli-ekb.ru, лента листается сама и стрелками -->
+    <section class="partners" aria-labelledby="partners-title">
+      <div class="partners__head">
+        <h2 class="partners__title" id="partners-title" data-i18n="partnersTitle">Рекомендуем к посещению</h2>
+        <div class="partners__arrows">
+          <button class="partners__arrow" type="button" aria-label="Назад" data-en-label="Back" data-partners-prev><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="partners__arrow" type="button" aria-label="Вперёд" data-en-label="Next" data-partners-next><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="partners__viewport">
+        <div class="partners__track" data-partners-track>
+          <a class="partner" href="https://stroganov-grill.ru" target="_blank" rel="noopener" title="СТРОГАНОВ ГРИЛЬ" data-en-title="STROGANOV GRILL"><span class="partner__logo"><img src="assets/partners/stroganov.jpg" alt="СТРОГАНОВ ГРИЛЬ" data-en-alt="STROGANOV GRILL" loading="lazy"></span><span class="partner__name" data-en="STROGANOV GRILL">СТРОГАНОВ ГРИЛЬ</span></a>
+          <a class="partner" href="https://shustof.ru" target="_blank" rel="noopener" title="ШУСТОВ" data-en-title="SHUSTOV"><span class="partner__logo"><img src="assets/partners/shustov.png" alt="ШУСТОВ" data-en-alt="SHUSTOV" loading="lazy"></span><span class="partner__name" data-en="SHUSTOV">ШУСТОВ</span></a>
+          <a class="partner" href="https://lethai.ru" target="_blank" rel="noopener" title="Салон тайского массажа" data-en-title="Thai massage salon"><span class="partner__logo"><img src="assets/partners/lethai.jpg" alt="Салон тайского массажа" data-en-alt="Thai massage salon" loading="lazy"></span><span class="partner__name" data-en="Thai massage salon">Салон тайского массажа</span></a>
+          <a class="partner" href="https://italians-ekb.ru" target="_blank" rel="noopener" title="Ресторан Итальянцы" data-en-title="Italians restaurant"><span class="partner__logo"><img src="assets/partners/italians.png" alt="Ресторан Итальянцы" data-en-alt="Italians restaurant" loading="lazy"></span><span class="partner__name" data-en="Italians restaurant">Ресторан Итальянцы</span></a>
+          <a class="partner" href="https://ppr-ek.ru/" target="_blank" rel="noopener" title="Пиццерия" data-en-title="Pizzeria"><span class="partner__logo"><img src="assets/partners/pizzeria.jpg" alt="Пиццерия" data-en-alt="Pizzeria" loading="lazy"></span><span class="partner__name" data-en="Pizzeria">Пиццерия</span></a>
+          <a class="partner" href="https://floralavka.ru" target="_blank" rel="noopener" title="Цветы" data-en-title="Flowers"><span class="partner__logo"><img src="assets/partners/flora.png" alt="Цветы" data-en-alt="Flowers" loading="lazy"></span><span class="partner__name" data-en="Flowers">Цветы</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="site-footer__bottom">
+      <nav class="socials" aria-label="Соцсети" data-en-label="Social media">
+          <a class="social" href="https://max.ru/u/f9LHodD0cOI1_cVaK9ztD3dzQzi-vCalgGqEfkl7UUvR3izO3-byCxwGWAs" target="_blank" rel="noopener" title="Max-chat" aria-label="Max-chat"><img src="assets/social/max-chat.svg" alt=""></a>
+          <a class="social" href="https://t.me/ugli_ekb_bot" target="_blank" rel="noopener" title="Telegram-chat" aria-label="Telegram-chat"><img src="assets/social/tg-chat.svg" alt=""></a>
+          <a class="social" href="https://wa.me/79321166490" target="_blank" rel="noopener" title="Whatsapp" aria-label="Whatsapp"><img src="assets/social/whatsapp.svg" alt=""></a>
+          <a class="social" href="https://max.ru/id6685197405_biz" target="_blank" rel="noopener" title="Max-channel" aria-label="Max-channel"><img src="assets/social/max-channel.svg" alt=""></a>
+          <a class="social" href="https://t.me/ugli_ekb" target="_blank" rel="noopener" title="Telegram-channel" aria-label="Telegram-channel"><img src="assets/social/tg-channel.svg" alt=""></a>
+          <a class="social" href="https://vk.com/ugli_ek" target="_blank" rel="noopener" title="VK" aria-label="VK"><img src="assets/social/vk.svg" alt=""></a>
+          <a class="social" href="http://instagram.com/ugli_ekb" target="_blank" rel="noopener" title="Instagram*" aria-label="Instagram*"><img src="assets/social/instagram.svg" alt=""></a>
+          <a class="social" href="http://tripadvisor.ru/Restaurant_Review-g298540-d10687340-Reviews-Ugli-Yekaterinburg_Sverdlovsk_Oblast_Urals_District.html" target="_blank" rel="noopener" title="Tripadvisor" aria-label="Tripadvisor"><img src="assets/social/tripadvisor.svg" alt=""></a>
+      </nav>
+      <div class="site-footer__links">
+        <a href="https://ugli-ekb.ru/usloviya-dostavki/" target="_blank" rel="noopener" data-i18n="fDelivery">Оплата и доставка</a>
+        <a href="https://ugli-ekb.ru/policy/" target="_blank" rel="noopener" data-i18n="fPolicy">Политика конфиденциальности</a>
+        <a href="https://ugli-ekb.ru/documents/policy-data.pdf" target="_blank" rel="noopener" data-i18n="fData">Обработка персональных данных</a>
+      </div>
+      <p class="site-footer__copy" data-en="UGLI © 2017-2026">УГЛИ © 2017-2026</p>
+    </div>
+  </footer>
+  <script type="module" src="footer.js"></script>
+  <script type="module" src="burger.js"></script>
+  <script type="module" src="lang.js"></script>
+<!-- FOOTER:END -->
+
+  <!-- Телефон: кнопка «Забронировать» всегда внизу по центру экрана -->
+  <a class="book-float" href="#book" data-book data-book-float data-i18n="book">Забронировать</a>
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="booking.js"></script>
+</body>
+</html>

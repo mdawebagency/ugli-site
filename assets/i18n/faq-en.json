@@ -1,0 +1,38 @@
+[
+  {
+    "q": "Can we hold a banquet at your restaurant?",
+    "a": "<p>Of course, YES. <br> We can offer a separate banquet hall for up to 35 people. The hall is perfect for birthdays, weddings, gender parties, corporate events, business meetings and breakfasts. The hall is fully equipped with everything you need: screen and projector, sound system, light show, flipchart. <br> We have a <a href=\"assets/pdf/banketnoe-menyu.pdf\" target=\"_blank\" rel=\"noopener\">banquet</a> and a <a href=\"assets/pdf/furshetnoe-menyu.pdf\" target=\"_blank\" rel=\"noopener\">buffet</a> menu! <br> There is <strong>no</strong> corkage fee and no hall rental, and no charge for using anything in the banquet hall either. <br> We assign dedicated waiters to your event, trained and familiar with all the details and nuances of banquets. <br> Call <a href=\"tel:+79220281406\">+79220281406</a> and our banquet manager Evgenia will be happy to answer all your questions and offer a solution for any request.</p>"
+  },
+  {
+    "q": "Can we celebrate a child's birthday at your restaurant?",
+    "a": "<p>Absolutely. We can seat you in several halls, including the banquet hall. There you can hold master classes, invite entertainers, have fun and eat well — we also have a <a href=\"assets/pdf/detskoe-menyu.pdf\" target=\"_blank\" rel=\"noopener\">children's</a> menu. And there is a sound system and a light show) </p>"
+  },
+  {
+    "q": "Do you have private rooms?",
+    "a": "<p>Yes, our restaurant has three. <br> The \"<strong>VIP room</strong>\" seats 10-12 people, the \"<strong>Banquet room</strong>\" holds up to 25 people. And there is a separate <strong>banquet hall</strong> for 35 people, which is very popular for anniversaries, weddings, corporate parties and other large events. You can get all the information about the banquet hall from our banquet manager Evgenia at <a href=\"tel:+79220281406\">+79220281406</a><br> We look forward to your call! </p>"
+  },
+  {
+    "q": "Delivery terms",
+    "a": "<p> Here you can check the cost of delivery from the restaurant to your address, delivery time and terms <a href=\"https://ugli-ekb.ru/usloviya-dostavki/\" target=\"_blank\" rel=\"noopener\">https://ugli-ekb.ru/usloviya-dostavki/</a> </p> <p> You can check your address on the delivery zone map here <a href=\"https://ugli-ekb.ru/delivery-map/\" target=\"_blank\" rel=\"noopener\">https://ugli-ekb.ru/delivery-map/</a> </p>"
+  },
+  {
+    "q": "Why can't all dishes be ordered for delivery?",
+    "a": "<p> Some of our dishes are meant to be served in front of the guest and are prepared only inside the restaurant. You can always choose an alternative for your order or consult the delivery manager about the dishes you are interested in. And, of course, you can try these dishes when you visit the restaurant</p>"
+  },
+  {
+    "q": "How do I book the table I want?",
+    "a": "<p> Tables are reserved through the <a href=\"https://ugli-ekb.ru/?reserve\" target=\"_blank\" rel=\"noopener\">form on the website</a>. In the comment you can mention any wishes, and we will try to find the best option for you</p>"
+  },
+  {
+    "q": "Can I come with pets?",
+    "a": "<p> Yes, we will gladly seat you with small dogs </p>"
+  },
+  {
+    "q": "Do you have a corkage fee?",
+    "a": "<p> No, we selected our <a href=\"assets/pdf/karta-vin-i-piva.pdf\" target=\"_blank\" rel=\"noopener\">wines</a> and put together our <a href=\"assets/pdf/karta-bara.pdf\" target=\"_blank\" rel=\"noopener\">cocktail list</a> with special love and care. We are sure you will find something for yourself </p>"
+  },
+  {
+    "q": "Can we bring our own cake?",
+    "a": "<p> Our pastry chef is a true master — we will be happy to bring your wishes to life. </p>"
+  }
+]
